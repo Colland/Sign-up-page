@@ -11,29 +11,54 @@
     <div class = "aside">
         <div class = "banner">
             <img src="odin-lined.png" alt="Odin logo" class = "banner-image">
+            <h1 class = "banner-text">Odin punk</h1>
         </div>
     </div>
     <div class = "main">
         <div class = "main-title">
-            <p>This is not a real online service! You know you need something like this
+            <p class = "main-title-text1">This is not a real online service! You know you need something like this
                 in your life to help you realize your deepest dreams. Sign up <span>now</span> to get started.
             </p>
 
-            <p>You <span>know</span> you want to.</p>
+            <p class = "main-title-text2">You <span>know</span> you want to.</p>
         </div>
-        <div class = "main-signup">
-            <form action="">
-                <p>Lets do this!</p>
+        <div class = "signup-container">
+            <form action="" class = "signup-form">
+                <div class = signup-container2>
+                    <p>Lets do this!</p>
+                    <ul class = "signup-inputs">
+                        <li>
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id = "firstname">
+                        </li>
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id = "email">
+                        </li>
+                        <li>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id = "password">
+                        </li>
+                        <li>
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id = "lastname">
+                        </li>
+                        <li>
+                            <label for="phonenumber">PHONE NUMBER</label>
+                            <input type="tel" id = "phonenumber">
+                        </li>
+                        <li>
+                            <label for="passwordconfirm">CONFIRM PASSWORD</label>
+                            <input type="password" id = "passwordconfirm">
+                        </li>
+                    </ul>
+                </div>
 
-                <ul class = "signup-inputs">
-                    <li><input type="text"></li>
-                    <li><input type="email"></li>
-                    <li><input type="password"></li>
-                    <li><input type="text"></li>
-                    <li><input type="tel"></li>
-                    <li><input type="password"></li>
-                </ul>
+                <button type = "submit" id = "account-button">Create Account</button>
+                <p id = "already-has-account">Already have an account? <a href="" id = "login-link">Log in</a></p>
             </form>
+        </div>
+        <div class = "bottom-main">
         </div>
     </div>
 </body>
