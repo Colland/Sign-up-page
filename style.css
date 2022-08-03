@@ -19,8 +19,6 @@ body
     display: flex;
     width: 100vw;
     height: 100vh;
-    min-height: 400px;
-    min-width: 800px;
 }
 
 .aside
@@ -28,10 +26,11 @@ body
     position: relative;
     width: 40%;
     height: 100%;
-    background-image: url(DALL·E-skyline.png);
+    background-image: url(images/DALL·E-skyline.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 865px;
 }
 
 .banner
@@ -123,20 +122,42 @@ body
 {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    align-content: flex-start;
+    column-gap: 3vw;
+    row-gap: 50px;
     height: 250px;
-    width: 650px;
+    width: 100%;
     list-style: none;
     padding-left: 50px;
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 12.5px;
     font-family: monospace;
     font-weight: bold;
 }
 
+@media screen and (max-width: 900px)
+{
+    .signup-inputs
+    {
+        flex-flow: row wrap;
+        row-gap: 15px;;
+    }
+
+    .signup-container2
+    {
+        height: 370px;
+    }
+
+    .main-title
+    {
+        width: 100%;
+    }
+}
+
 .signup-inputs li
 {
     width: 250px;
+    height: 30px;
 }
 
 .signup-inputs input
@@ -146,7 +167,6 @@ body
     width: 250px;
     border: 1px solid rgba(182, 182, 182, 0.5);
     border-radius: 5px;
-    margin-bottom: 20px;
     padding: 3px 6px;
 }
 
