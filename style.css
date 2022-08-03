@@ -25,13 +25,14 @@ body
 {
     position: relative;
     width: 40%;
-    height: 100vh;
+    height: 100%;
     background-image: url(images/DALL·E-skyline.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     min-height: 865px;
 }
+
 
 .banner
 {
@@ -136,38 +137,13 @@ body
     font-weight: bold;
 }
 
-@media screen and (max-width: 900px)
-{
-    .signup-inputs
-    {
-        flex-flow: row wrap;
-        row-gap: 15px;;
-    }
-
-    .signup-container2
-    {
-        height: 370px;
-    }
-
-    .main-title
-    {
-        width: 100%;
-    }
-
-    .banner-image
-    {
-        width: calc(80px + 5vw);
-        height: calc(80px + 5vw);
-    }
-}
-
 .signup-inputs li
 {
     width: 250px;
     height: 30px;
 }
 
-.signup-inputs input
+.signup-inputs-field
 {
     appearance: none;
     height: 30px;
@@ -175,6 +151,24 @@ body
     border: 1px solid rgba(182, 182, 182, 0.5);
     border-radius: 5px;
     padding: 3px 6px;
+    outline: none;
+}
+
+.signup-inputs-field:focus
+{
+    border: 1px solid blue;
+    box-shadow: 3px 3px 3px rgb(189, 189, 189);
+}
+
+.password-error
+{
+    appearance: none;
+    height: 30px;
+    width: 250px;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 3px 6px;
+    outline: none;
 }
 
 #account-button
@@ -203,7 +197,6 @@ body
 {
     padding-left: 50px;
     margin-top: 30px;
-
 }
 
 #login-link
@@ -213,8 +206,27 @@ body
     font-weight: bold;
 }
 
-.bottom-main
+@media screen and (max-width: 900px)
 {
-    padding-left: 50px;
-    background-color:#f9fafb
+    .signup-inputs
+    {
+        flex-flow: row wrap;
+        row-gap: 15px;;
+    }
+
+    .signup-container2
+    {
+        height: 370px;
+    }
+
+    .main-title
+    {
+        width: 100%;
+    }
+
+    .banner-image
+    {
+        width: calc(80px + 5vw);
+        height: calc(80px + 5vw);
+    }
 }
