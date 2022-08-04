@@ -50,6 +50,7 @@ body
 {
     height: 125px;
     width: 125px;
+    margin-left: 16%;
     flex-shrink: 0;
 }
 
@@ -59,7 +60,29 @@ body
     color: white;
     font-size: calc(55px + 1.2vw);
     width: calc(200px + 10vw);
-    text-align: center;
+    text-align:left;
+}
+
+.pic-credit
+{
+    display: flex;
+    justify-content: center;;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.pic-credit a
+{
+    color: white;
 }
 
 .main
@@ -160,6 +183,21 @@ body
     box-shadow: 3px 3px 3px rgb(189, 189, 189);
 }
 
+.password-error-check
+{
+    position: relative;
+}
+
+.password-error-check::before
+{
+    position: absolute;
+    content: "*Passwords must match";
+    width: 200px;
+    height: 10px;
+    color: red;
+    top: 50px;
+}
+
 .password-error
 {
     appearance: none;
@@ -212,11 +250,17 @@ body
     {
         flex-flow: row wrap;
         row-gap: 15px;;
+        margin-top: 10px;
     }
 
     .signup-container2
     {
         height: 370px;
+    }
+
+    .signup-container2 p
+    {
+        font-size: 1.2rem;
     }
 
     .main-title
@@ -228,5 +272,10 @@ body
     {
         width: calc(80px + 5vw);
         height: calc(80px + 5vw);
+    }
+
+    #passwordcontainer
+    {
+        margin-bottom: 30px;
     }
 }

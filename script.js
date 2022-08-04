@@ -1,6 +1,7 @@
 const passwordField = document.querySelector("#password");
 const confirmPasswordField = document.querySelector("#passwordconfirm");
 const form = document.querySelector(".signup-form");
+const passLabel = document.querySelector("#passLabel");
 
 form.addEventListener("submit", passCheck);
 
@@ -14,5 +15,6 @@ function passCheck(e)
     
         passwordField.classList.add("password-error");
         confirmPasswordField.classList.add("password-error");
+        passLabel.classList.add("password-error-check");
     }
 }
